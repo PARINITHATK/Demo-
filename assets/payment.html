@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment — Black & Beige</title>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID');
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand"><a href="index.html">Black & Beige</a></div>
+        <button class="nav-toggle" id="navTogglePayment" aria-label="Toggle navigation">☰</button>
+        <nav class="nav" id="mainNavPayment">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="payment.html" class="nav-link active">Payment</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="products.html">🛒 <span id="cartCounterPayment" class="cart-count">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container payment-page">
+      <section class="payment-header">
+        <h1>Checkout</h1>
+        <p class="lead">Complete your purchase.</p>
+      </section>
+
+      <section class="checkout-grid">
+        <form id="paymentForm" class="payment-form" novalidate>
+          <h2>Payment Details</h2>
+
+          <div class="form-row">
+            <label for="cardName">Name on Card</label>
+            <input id="cardName" name="cardName" type="text" required placeholder="Full name as on card" />
+            <small class="error" id="errorCardName"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="cardAddress">Billing Address</label>
+            <input id="cardAddress" name="cardAddress" type="text" required placeholder="Street, City, ZIP" />
+            <small class="error" id="errorCardAddress"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="cardNumber">Card Number</label>
+            <input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" maxlength="19" required placeholder="1234 5678 9012 3456" />
+            <small class="error" id="errorCardNumber"></small>
+          </div>
+
+          <div class="form-row split">
+            <div>
+              <label for="expiry">Expiry</label>
+              <input id="expiry" name="expiry" type="text" maxlength="7" placeholder="MM / YYYY" required />
+              <small class="error" id="errorExpiry"></small>
+            </div>
+            <div>
+              <label for="cvv">CVV</label>
+              <input id="cvv" name="cvv" type="password" maxlength="4" required placeholder="123" />
+              <small class="error" id="errorCvv"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn primary">Pay Now</button>
+            <button type="reset" class="btn outline">Reset</button>
+          </div>
+        </form>
+
+        <aside class="order-summary">
+          <h3>Order Summary</h3>
+          <div id="orderItems">
+            <p>No items in cart yet.</p>
+          </div>
+          <div class="summary-total">
+            <span>Total</span>
+            <strong id="orderTotal">₹0</strong>
+          </div>
+          <a class="btn link" href="products.html">Continue Shopping</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html">Black & Beige</a>
+          <p>&copy; <span id="yearPayment"></span> Black & Beige. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="payment.html">Payment</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
