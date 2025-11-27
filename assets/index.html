@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Black & Beige — Modern Clothing Brand</title>
+  <meta name="description" content="Black & Beige — modern, minimal clothing for everyday life." />
+
+  <!-- Google Analytics 4 base tag (replace MEASUREMENT_ID with real ID) -->
+  <!-- GA4 base tag - keep as-is and replace with your ID later -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    // GA4 base configuration (replace G-MEASUREMENT_ID)
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID'); // <-- replace with your GA4 measurement ID
+  </script>
+
+  <!-- Google Ads conversion tracking placeholder (gtag format) -->
+  <!-- Replace AW-CONVERSION_ID_HERE and CONVERSION_LABEL_HERE when available -->
+  <script>
+    // Placeholder function for Google Ads conversion events
+    // Real conversions should call:
+    // gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID_HERE/CONVERSION_LABEL_HERE', 'value': 1.0, 'currency': 'USD'});
+    // Keeping placeholder so it can be swapped later without changing code structure.
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Site wrapper -->
+  <div class="site">
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html" aria-label="Black & Beige home">Black & Beige</a>
+        </div>
+
+        <!-- Mobile menu toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="payment.html" class="nav-link">Payment</a></li>
+          </ul>
+        </nav>
+
+        <!-- Cart icon / counter -->
+        <div class="cart">
+          <a href="products.html" aria-label="View cart">
+            🛒 <span id="cartCounter" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Timeless. Minimal. Always Comfortable.</h1>
+            <p class="slogan">Discover curated pieces in black, beige and white — made for everyday life.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="products.html">Shop Now</a>
+              <a class="btn outline" href="about.html">Our Story</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <!-- Placeholder hero image - provide your own in assets/images/hero.jpg -->
+            <img src="assets/images/hero.jpg" alt="Clothing hero image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured products preview -->
+      <section class="featured container">
+        <h2>Featured</h2>
+        <p class="lead">Hand-picked styles — signature minimal designs.</p>
+
+        <div class="product-grid" id="homeProductGrid">
+          <!-- Small product cards preview; Add-to-cart works same as on products page -->
+          <article class="product-card">
+            <img src="assets/images/product1.jpg" alt="Product 1" />
+            <div class="product-info">
+              <h3>Essential Tee</h3>
+              <p class="price">₹799</p>
+              <p class="desc">Soft organic cotton tee — relaxed fit.</p>
+              <div class="card-actions">
+                <button class="btn add-to-cart" data-id="p1" data-name="Essential Tee" data-price="799">Add to Cart</button>
+                <a class="btn link" href="products.html">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/images/product2.jpg" alt="Product 2" />
+            <div class="product-info">
+              <h3>Relaxed Shirt</h3>
+              <p class="price">₹1499</p>
+              <p class="desc">Lightweight shirt for all-day comfort.</p>
+              <div class="card-actions">
+                <button class="btn add-to-cart" data-id="p2" data-name="Relaxed Shirt" data-price="1499">Add to Cart</button>
+                <a class="btn link" href="products.html">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/images/product3.jpg" alt="Product 3" />
+            <div class="product-info">
+              <h3>Minimal Jacket</h3>
+              <p class="price">₹3499</p>
+              <p class="desc">Structured, timeless jacket — versatile layering.</p>
+              <div class="card-actions">
+                <button class="btn add-to-cart" data-id="p3" data-name="Minimal Jacket" data-price="3499">Add to Cart</button>
+                <a class="btn link" href="products.html">View</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Brand info -->
+      <section class="container about-teaser">
+        <div class="teaser-grid">
+          <div>
+            <h3>Our Promise</h3>
+            <p>Quality materials, honest pricing, and timeless design. Sustainably sourced where possible.</p>
+          </div>
+          <div>
+            <h3>Free Shipping</h3>
+            <p>Free shipping over ₹2999. Easy returns within 14 days.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html">Black & Beige</a>
+          <p>&copy; <span id="year"></span> Black & Beige. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="payment.html">Payment</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Main script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+
