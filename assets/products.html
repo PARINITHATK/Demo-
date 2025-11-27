@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Black & Beige</title>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID');
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html">Black & Beige</a>
+        </div>
+        <button class="nav-toggle" id="navToggleProducts" aria-label="Toggle navigation">☰</button>
+        <nav class="nav" id="mainNavProducts">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="payment.html" class="nav-link">Payment</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="products.html">🛒 <span id="cartCounterProducts" class="cart-count">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="products-header">
+        <h1>Products</h1>
+        <p class="lead">Browse our current collection of minimal essentials.</p>
+      </section>
+
+      <!-- Product grid -->
+      <section class="product-grid" id="productGrid">
+        <!-- Product cards (duplicate pattern for more products) -->
+        <article class="product-card">
+          <img src="assets/images/product1.jpg" alt="Essential Tee" />
+          <div class="product-info">
+            <h3>Essential Tee</h3>
+            <p class="price">₹799</p>
+            <p class="desc">Soft organic cotton tee — relaxed fit.</p>
+            <div class="card-actions">
+              <button class="btn add-to-cart" data-id="p1" data-name="Essential Tee" data-price="799">Add to Cart</button>
+              <a class="btn link" href="payment.html">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/images/product2.jpg" alt="Relaxed Shirt" />
+          <div class="product-info">
+            <h3>Relaxed Shirt</h3>
+            <p class="price">₹1499</p>
+            <p class="desc">Lightweight shirt for all-day comfort.</p>
+            <div class="card-actions">
+              <button class="btn add-to-cart" data-id="p2" data-name="Relaxed Shirt" data-price="1499">Add to Cart</button>
+              <a class="btn link" href="payment.html">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/images/product3.jpg" alt="Minimal Jacket" />
+          <div class="product-info">
+            <h3>Minimal Jacket</h3>
+            <p class="price">₹3499</p>
+            <p class="desc">Structured, timeless jacket — versatile layering.</p>
+            <div class="card-actions">
+              <button class="btn add-to-cart" data-id="p3" data-name="Minimal Jacket" data-price="3499">Add to Cart</button>
+              <a class="btn link" href="payment.html">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/images/product4.jpg" alt="Classic Pants" />
+          <div class="product-info">
+            <h3>Classic Pants</h3>
+            <p class="price">₹1999</p>
+            <p class="desc">Tailored trousers with comfortable stretch.</p>
+            <div class="card-actions">
+              <button class="btn add-to-cart" data-id="p4" data-name="Classic Pants" data-price="1999">Add to Cart</button>
+              <a class="btn link" href="payment.html">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="assets/images/product5.jpg" alt="Soft Hoodie" />
+          <div class="product-info">
+            <h3>Soft Hoodie</h3>
+            <p class="price">₹2499</p>
+            <p class="desc">Cozy midweight hoodie — oversized fit.</p>
+            <div class="card-actions">
+              <button class="btn add-to-cart" data-id="p5" data-name="Soft Hoodie" data-price="2499">Add to Cart</button>
+              <a class="btn link" href="payment.html">Buy Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more product cards as needed -->
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html">Black & Beige</a>
+          <p>&copy; <span id="yearProducts"></span> Black & Beige. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="payment.html">Payment</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+
