@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Black & Beige</title>
+
+  <!-- GA4 base (same as other pages) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID');
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html">Black & Beige</a>
+        </div>
+        <button class="nav-toggle" id="navToggleAbout" aria-label="Toggle navigation">☰</button>
+        <nav class="nav" id="mainNavAbout">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="payment.html" class="nav-link">Payment</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="products.html">🛒 <span id="cartCounterAbout" class="cart-count">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container about-hero">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="assets/images/about-hero.jpg" alt="About image" />
+          </div>
+          <div class="about-content">
+            <h1>Our Story</h1>
+            <p class="lead">Built around minimal design and real comfort.</p>
+            <p>Black & Beige started with a simple idea: create clothes that feel as good at work as they do at home. We focus on clean lines, versatile palettes, and elevated basics that last.</p>
+
+            <h3>Design Philosophy</h3>
+            <p>We design for longevity — timeless shapes, neutral palettes, and fabrics chosen for durability and feel.</p>
+
+            <h3>Sustainability</h3>
+            <p>We're committed to reducing waste through smart production practices and responsible sourcing.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html">Black & Beige</a>
+          <p>&copy; <span id="yearAbout"></span> Black & Beige. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="payment.html">Payment</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
